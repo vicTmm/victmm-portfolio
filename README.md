@@ -1,35 +1,39 @@
-﻿# Victor Hugo — Portfólio
+# Victor Hugo · Portfólio
 
-Site estático em português, sem dependências de execução e sem backend. Inclui menu superior, apresentação pessoal, projetos, detalhes dos cases em modal, currículo e contato.
+Portfólio estático em português, com direção visual baseada na imagem enviada pelo Victor: fundo escuro, luzes roxas, retratos circulares, habilidades com pontos coloridos, cards de projetos e contato.
 
-## Rodar localmente
+## Desenvolvimento
 
-Requer Node.js 20 ou superior.
+Node.js 20+. Sem dependências para instalar.
 
 ```sh
 npm run build
 npm run dev
 ```
 
-Abra http://localhost:4173. No PowerShell com scripts bloqueados, use `npm.cmd` no lugar de `npm`. Após editar os arquivos, rode o build novamente e atualize a página.
+Abra http://localhost:4173. No PowerShell com scripts bloqueados, use `npm.cmd`. Após editar, rode o build e atualize a página.
 
-## Hospedagem
+## Arquivos ativos
 
-O comando de build é `npm run build` e a pasta publicada é `dist`. O resultado contém somente arquivos estáticos e pode ser hospedado em Cloudflare Pages ou outro serviço de hospedagem estática. Não precisa de variáveis de ambiente.
+- `index.html`: apresentação, sobre, skills, projetos e contato.
+- `aurora.css`: layout, tokens, efeitos e responsividade.
+- `aurora.js`: filtros, nove cases, menu, tema e preparação de e-mail.
+- `case-data.js`: conteúdo e evidências dos sete projetos e duas automações profissionais.
+- `theme-motion.css`: movimento dos objetos sol/lua, sem caixa em volta do botão.
+- `public/avatar.png` e `public/victor-avatar-3d.png`: avatares pessoais existentes.
+- `public/icons-3d/`: ícones oficiais 3dicons CC0; origem em `docs/3dicons.md`.
+- `public/victor-hugo-curriculo.pdf`: currículo para download.
 
-Um domínio `.tech` pode apontar para a hospedagem escolhida; o domínio não substitui a hospedagem. Configure o domínio personalizado no provedor e use os registros DNS que ele indicar. Nenhum deploy foi realizado por este projeto.
+## Comportamento
 
-## Editar
+Filtros de projetos: Todos, Inteligência artificial, Produtos digitais e Automações. Cases abrem em diálogo acessível, com Escape para fechar. As capas são composições ilustrativas identificadas, não screenshots das aplicações. Pontos de skills são decorativos, sem notas de proficiência.
 
-O visual de caderno usa `scrapbook.css` e a paleta aprovada em `field-notes.css`. As interações ficam em `motion.js` e `motion.css`: digitação, título com caracteres, adesivos na rolagem, estrelas arrastáveis, tema e ampliação do personagem. Os botões no topo controlam tema e movimento, com preferência salva no navegador. A origem do fundo do caderno está registrada em `docs/design-reference.md`.
+O formulário prepara um link `mailto:` com assunto e corpo preenchidos. A pessoa conclui o envio em seu próprio aplicativo de e-mail. Nenhum envio ou armazenamento é simulado, e não há backend de contato. O endereço direto também está disponível.
 
-- `index.html`: apresentação, cards, trajetória e links.
-- `style.css`: estilos base.
-- `scrapbook.css`: tema de caderno, recortes e versões responsivas.
-- `app.js`: texto dos cases, modal e cópia do e-mail.
-- `public/`: avatar, favicon e currículo para download.
-- `docs/portfolio-brief.md`: fontes, contexto e pontos a confirmar.
+Tema claro/escuro salvo localmente, troca com movimento e preferência por movimento reduzido respeitada. Google Fonts tem fallback local. Não há coleta de dados pelo site.
 
-As fontes Google Fonts são opcionais: o site tem fontes de sistema como fallback. As capas dos projetos são composições tipográficas em HTML/CSS; não são capturas dos produtos. O avatar é a imagem original recuperada do GitHub, sem recriação ou animação.
+## Hospedagem e versões
 
-Antes de publicar, revise o currículo e confirme o estágio atual dos cases. Os números de desempenho pertencem às automações descritas no currículo. Não há alegações de métricas de adoção de Papaia ou Vinky. Os links de repositórios sem acesso confirmado não são apresentados como demos públicas.
+Build: `npm run build`. Diretório publicado: `dist`. Compatível com Cloudflare Pages e hospedagem estática. Sem variáveis de ambiente. O build não faz deploy.
+
+Arcade preservado em `/arcade.html`, estudo em `/replica.html`. Fontes das versões anteriores em `references/cabinet-version/`, `references/nadhir-version/` e `references/notebook-version/`. A pasta `public/bolha-dev` de outra sessão foi preservada. A investigação REA anterior permanece em `docs/cabinet-reconstruction.md`, com evidências locais em `tmp/cabinet` fora do build.

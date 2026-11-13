@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="description" content="O mural de networking da Bolha Dev. Conheça as pessoas por trás dos arrobas.">
+  <title>Bolha Dev | Gente além do @</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%23253426'/%3E%3Ctext x='24' y='33' text-anchor='middle' font-size='32' fill='%23e7f49b'%3Eb%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" type="module"></script>
+</head>
+<body>
+  <a class="skip" href="#mural">Ir para o mural</a>
+  <header class="header wrap">
+    <a class="brand" href="./" aria-label="Bolha Dev, início"><span class="brand-mark" aria-hidden="true">b<span>↗</span></span><span>bolha<span class="brand-dev">dev</span></span></a>
+    <nav aria-label="Principal"><button class="text-button" data-info="about">Como funciona</button><button class="button compact" data-create>Meu post-it <span aria-hidden="true">↗</span></button></nav>
+  </header>
+  <main>
+    <section class="intro wrap" aria-labelledby="title">
+      <div class="intro-copy"><h1 id="title">Tem gente boa<br>na sua <span class="circled">bolha.<svg viewBox="0 0 300 105" preserveAspectRatio="none" aria-hidden="true"><path d="M280 21C227-8 39 2 13 42S75 106 199 92 308 48 280 21M275 17c18 5 28 18 20 35"/></svg></span></h1><p>O feed apresenta. A gente conecta.<br>Conheça quem tá do outro lado do @, troque ideias<br class="desktop-break"> e encontre companhia pro seu próximo projeto.</p><div class="intro-actions"><button class="button" data-create><span aria-hidden="true">＋</span> Colar meu post-it</button><a class="explore" href="#mural">Explorar o mural <span aria-hidden="true">↓</span></a></div></div>
+      <div class="paper-scene" aria-hidden="true"><div class="sketch-note"><span class="tape"></span><span class="note-code">&lt;gente de verdade /&gt;</span><strong>Menos algoritmo.<br>Mais conexão.</strong><div class="note-people"><span>oi!</span><span>hello</span><span>salve</span></div><span class="note-bottom">da timeline pra vida real ↗</span></div><span class="hand-note">a próxima conversa<br>boa começa aqui.<svg viewBox="0 0 110 50"><path d="M5 8c14 32 69 38 93 13m-19 1 20-3-6 18"/></svg></span><svg class="spark" viewBox="0 0 40 40"><path d="M20 2v36M2 20h36M7 7l26 26M7 33 33 7" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
+    </section>
+    <section id="mural" class="board-section" aria-labelledby="board-title"><div class="wrap">
+      <div class="board-heading"><div><h2 id="board-title">O mural da bolha<span aria-hidden="true"> ↙</span></h2><p>Dev, designer, estudante, curioso. Tem espaço pra você.</p></div><button class="text-button small" data-info="rules">Combinados da comunidade <span aria-hidden="true">↗</span></button></div>
+      <div class="demo-notice"><span>Você está vendo uma prévia com perfis fictícios.</span><span>Seu post-it fica salvo só neste navegador.</span></div>
+      <form class="filters" role="search" onsubmit="return false">
+        <label class="search-field"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><span class="sr-only">Buscar no mural</span><input id="search" type="search" placeholder="Nome, @, cidade ou assunto…" maxlength="100"></label>
+        <label><span class="sr-only">Filtrar por área</span><select id="area-filter"><option value="">Todas as áreas</option></select></label>
+        <label><span class="sr-only">Filtrar por objetivo</span><select id="goal-filter"><option value="">Todos os objetivos</option></select></label>
+      </form>
+      <div class="results-bar"><p id="result-count" role="status" aria-live="polite"></p><button id="clear-filters" class="text-button small" hidden>Limpar filtros ×</button><label class="sort-label">Ordenar <select id="sort"><option value="recent">Mais recentes</option><option value="name">Nome A–Z</option></select></label></div>
+      <div id="cards" class="cards"></div>
+      <div id="empty" class="empty" hidden><h3>Ninguém por aqui. Ainda.</h3><p>Tente outro assunto ou amplie os filtros.</p><button class="button" id="empty-clear">Ver todo o mural</button></div>
+      <div class="board-end"><svg class="end-spark" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 2v36M2 20h36M7 7l26 26M7 33 33 7" fill="none" stroke="currentColor" stroke-width="2"/></svg><p>A bolha fica melhor com você aqui.</p><button class="text-button" data-create>Deixe seu post-it <span aria-hidden="true">↗</span></button></div>
+    </div></section>
+  </main>
+  <footer class="wrap footer"><div><a class="brand footer-brand" href="./">bolha<span class="brand-dev">dev</span></a><p>Feito pela comunidade, para a comunidade.<br>Sem vínculo oficial com o X ou outras plataformas.</p></div><div class="footer-links"><button class="text-button small" data-info="privacy">Privacidade</button><button class="text-button small" data-info="rules">Combinados</button><span>Gente além do @.</span></div></footer>
+  <dialog id="profile-dialog" aria-labelledby="form-title"><form id="profile-form"><div class="dialog-top"><span class="dialog-kicker">Seu lugar no mural</span><button type="button" class="close" data-close aria-label="Fechar">×</button></div><h2 id="form-title">Prazer, eu sou…</h2><p class="dialog-description">Conte um pouco de você. Uma boa conversa começa por aí.</p><p class="form-notice">Prévia local: sem login Google por enquanto. Este perfil só será visto neste navegador.</p>
+    <div class="form-grid"><label>Seu nome *<input name="name" required maxlength="60" autocomplete="name" placeholder="Como você gosta de ser chamado?"></label><label>Seu @ no X<input name="handle" maxlength="16" pattern="@?[A-Za-z0-9_]{1,15}" placeholder="@seuarroba"></label><label>Cidade<input name="city" maxlength="60" placeholder="Cidade, UF" autocomplete="address-level2"></label><label>Área *<select name="area" required></select></label><label class="full">O que você está buscando? *<select name="goal" required></select></label><label>Faculdade ou instituição<input name="school" maxlength="80" placeholder="Opcional"></label><label>Curso<input name="course" maxlength="80" placeholder="Opcional"></label><label class="full">Sua apresentação *<textarea name="bio" required maxlength="350" rows="4" placeholder="O que você curte fazer, estudar ou construir?"></textarea><span class="field-hint">Até 350 caracteres. Não inclua documentos ou dados sensíveis.</span></label><label class="full">Assuntos que você curte<input name="tags" maxlength="100" placeholder="React, café, open source (separe por vírgula)"></label></div>
+    <fieldset class="social-fields"><legend>Onde a conversa continua <span>(opcional)</span></legend><label>LinkedIn<input name="linkedin" type="url" maxlength="200" placeholder="https://linkedin.com/in/…"></label><label>GitHub<input name="github" type="url" maxlength="200" placeholder="https://github.com/…"></label><label>Instagram<input name="instagram" type="url" maxlength="200" placeholder="https://instagram.com/…"></label></fieldset>
+    <fieldset class="color-fields"><legend>A cor do seu post-it</legend><div id="colors"></div></fieldset><label class="consent"><input name="consent" type="checkbox" required> Li os combinados e quero exibir estas informações no meu post-it local.</label><p id="form-error" class="form-error" role="alert"></p><div class="form-actions"><button type="button" id="delete-profile" class="text-button danger" hidden>Apagar meu post-it</button><button class="button" type="submit">Salvar meu post-it <span aria-hidden="true">↗</span></button></div></form></dialog>
+  <dialog id="info-dialog" aria-labelledby="info-title"><div class="dialog-top"><span class="dialog-kicker">Bolha Dev</span><button class="close" data-close aria-label="Fechar">×</button></div><h2 id="info-title"></h2><div id="info-content" class="info-content"></div></dialog>
+  <dialog id="delete-dialog" aria-labelledby="delete-title"><h2 id="delete-title">Tirar seu post-it?</h2><p>O perfil salvo neste navegador será apagado. Você pode criar outro depois.</p><div class="form-actions"><button class="text-button" data-close>Manter meu post-it</button><button id="confirm-delete" class="button">Sim, apagar</button></div></dialog>
+  <div id="toast" role="status" class="toast" hidden></div>
+</body>
+</html>

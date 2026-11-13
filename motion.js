@@ -71,7 +71,15 @@ function syncMotion() {
   pauseButton.setAttribute('aria-pressed', String(paused));
   pauseButton.setAttribute('aria-label', paused ? 'Retomar animações' : 'Pausar animações');
   pauseButton.title = paused ? 'Retomar animações' : 'Pausar animações';
-  if(paused) { morph.textContent = headingText; drawing.textContent = drawingText; typedRole.textContent = roles[roleIndex]; }
+  if(paused) {
+    titleProgress = headingText.length;
+    asciiProgress = drawingText.length;
+    morph.textContent = headingText;
+    drawing.textContent = drawingText;
+    typedRole.textContent = roles[roleIndex];
+    charIndex = roles[roleIndex].length;
+    deleting = true;
+  }
   else if(!document.hidden) { animateTitle(); animateDrawing(); typeRole(); }
   updateScroll();
 }
