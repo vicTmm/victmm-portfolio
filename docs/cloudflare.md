@@ -1,6 +1,7 @@
 # Hospedagem Cloudflare
 
-Worker: `victmm-portfolio`. Conta: `79713c6296c1f11ea71c1efce251bfed`.
+Worker: `portfolio`. Conta: `79713c6296c1f11ea71c1efce251bfed`.
+Endereço público: https://portfolio.victmm.workers.dev.
 
 O workflow `.github/workflows/cloudflare.yml` publica automaticamente os commits da
 branch `main`. Também pode ser iniciado por **Run workflow** no GitHub Actions.
