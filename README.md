@@ -56,3 +56,7 @@ No desenvolvimento, npm run dev serve site e API em http://localhost:4173, com d
 ## Contato atualizado
 
 O WhatsApp inclui mensagem inicial. contact.js substitui a tentativa de abrir mailto automaticamente por um seletor de envio no Gmail, Outlook ou aplicativo instalado, com alternativa de copiar a mensagem. A pessoa revisa e conclui o envio no serviço escolhido. Detalhes em docs/contact.md. Sem backend de envio e sem confirmação simulada de entrega.
+
+## Publicação de 16/11/2026
+
+Versão atual publicada em https://portfolio.victmm.workers.dev/, com galerias, lâmpada, identidade VH, contato e curtidas persistentes. Código da publicação: b3813b5. O botão de contato do início não exibe mais o balão do agente. Build, testes locais da API e respostas públicas conferidos. Dados de desenvolvimento das curtidas são separados de produção. O currículo original fica apenas local e ignorado pelo Git.
