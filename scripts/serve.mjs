@@ -6,7 +6,8 @@ const types = { '.html':'text/html; charset=utf-8', '.css':'text/css', '.js':'te
 http.createServer(async (req, res) => {
   try {
     const url = new URL(req.url, 'http://localhost');
-    const file = path.resolve(root, '.' + decodeURIComponent(url.pathname === '/' ? '/index.html' : url.pathname));
+    const route = url.pathname === '/' ? '/index.html' : /^\/projetos\/?$/.test(url.pathname) ? '/projetos/index.html' : url.pathname;
+    const file = path.resolve(root, '.' + decodeURIComponent(route));
     if (!file.startsWith(root + path.sep)) { res.writeHead(403).end(); return; }
     const data = await readFile(file);
     res.writeHead(200, { 'Content-Type':types[path.extname(file)] || 'application/octet-stream' }); res.end(data);

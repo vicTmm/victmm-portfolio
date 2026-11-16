@@ -1,5 +1,10 @@
-import { mkdir, copyFile, cp } from 'node:fs/promises';
+import { mkdir, copyFile, cp, rm } from 'node:fs/promises';
 await mkdir('dist', { recursive: true });
-for (const file of ['index.html', 'aurora.css', 'aurora.js', 'theme-motion.css', 'arcade.html', 'replica.html', 'cabinet.css', 'cabinet.js', 'case-data.js']) await copyFile(file, `dist/${file}`);
+for (const file of ['index.html', 'aurora.css', 'aurora.js', 'projects.js', 'project-details.js', 'theme-motion.css', 'arcade.html', 'replica.html', 'cabinet.css', 'cabinet.js', 'case-data.js']) await copyFile(file, `dist/${file}`);
+await mkdir('dist/projetos', { recursive: true });
+await copyFile('likes.js', 'dist/likes.js');
+await copyFile('contact.js', 'dist/contact.js');
+await copyFile('projetos.html', 'dist/projetos/index.html');
 await cp('public', 'dist', { recursive: true });
+await rm('dist/victor-hugo-curriculo.pdf', { force: true });
 console.log('Site estático gerado em dist/');

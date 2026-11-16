@@ -2,6 +2,7 @@ dist/
 node_modules/
 *.log
 tmp/
+references/source-documents/
 .cloudflare/
 
 # wrangler files
