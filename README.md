@@ -6,7 +6,7 @@ Sou o Victor Hugo. Aqui reúno meus projetos de desenvolvimento, automação, in
 
 ## Meus projetos
 
-No site, apresento Papaia, Vinky, Talentos Paraquett, Oferta Re, InsurMinds e Clima Seguro. Cada projeto tem uma galeria com telas, uma descrição e as tecnologias que usei.
+No site, compartilho os projetos que desenvolvi e vou adicionando outros por lá. Cada projeto tem uma galeria com telas, uma descrição e as tecnologias que usei.
 
 Também conto um pouco sobre minha atuação e deixo meus canais de contato para conversar sobre projetos e oportunidades.
 
