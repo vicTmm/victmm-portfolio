@@ -1,5 +1,7 @@
 # Hospedagem Cloudflare
 
+Deploys automáticos da Vercel estão desativados em todas as branches por `git.deploymentEnabled: false` em `vercel.json`. O projeto usa Cloudflare para o portfólio e a API de curtidas, e GitHub Pages para a página de compartilhamento. Essa configuração impede novas publicações automáticas na Vercel; ela não apaga projetos ou deploys antigos daquela plataforma.
+
 Worker: `portfolio`. Conta: `79713c6296c1f11ea71c1efce251bfed`.
 Endereço público: https://portfolio.victmm.workers.dev.
 
