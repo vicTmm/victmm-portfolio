@@ -1,4 +1,5 @@
 dist/
+dist-share/
 node_modules/
 *.log
 tmp/

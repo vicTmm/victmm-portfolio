@@ -1,5 +1,9 @@
 # Victor Hugo · Portfólio
 
+## Página de compartilhamento no GitHub Pages
+
+`share/index.html` é uma entrada estática para compartilhar no LinkedIn. Usa a imagem OG existente em grafite e violeta e um único botão “Abrir portfólio”, com seta horizontal, para o site completo na Cloudflare. Sem redirecionamento automático, scripts, contador duplicado ou serviços externos para carregar o preview. Layout conferido em 1440, 768 e 390 px, sem overflow e com botão visível na primeira tela. A hospedagem é gratuita no repositório público existente.
+
 ## Identidade e conteúdo
 
 Título principal começa em **Desenvolvedor de Automação** e alterna, por solicitação do Victor, nesta ordem: **Desenvolvedor de Automação**, **AI Builder** e **Atuário**, com efeito de digitação e apagamento. Victor está se formando e prefere dar destaque ao trabalho com IA. Não usar “engenheiro de software”. Apresentação: “Na interseção entre tecnologia, criatividade e funcionalidade, desenvolvo produtos digitais, automações e soluções com IA que fazem a diferença na prática.” Destacar em negrito “tecnologia, criatividade e funcionalidade”.
